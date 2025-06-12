@@ -82,7 +82,7 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
             it.lore(
                 mutableListOf(
                     Component.text(bar),
-                    Component.text("§7ワールドの中心を変えずに拡張します。"),
+                    Component.text("§7ワールドの中心を変えずに東西南北全方位に半分ずつ拡張します。"),
                     Component.text(bar),
                 )
             )
@@ -91,14 +91,14 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         // 左上
         val methodLeftUp = ItemStack(Material.CHEST)
         methodLeftUp.editMeta {
-            it.itemName(Component.text("左上に拡張").color(AQUA))
+            it.itemName(Component.text("北西に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
                     Component.text(bar),
-                    Component.text("§7ワールドを左上(北西)方向に拡張します。"),
+                    Component.text("§7ワールドを北西方向に拡張します。"),
                     Component.text(bar),
-                    Component.text("§7██"),
-                    Component.text("§7█§b█"),
+                    Component.text("§7██北"),
+                    Component.text("§7█§b█§7⮙"),
                     Component.text("$index §7灰色: 拡張されるエリア"),
                     Component.text("$index §7水色: 現在のエリア"),
                     Component.text(bar),
@@ -109,14 +109,14 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         // 左下
         val methodLeftDown = ItemStack(Material.CHEST)
         methodLeftDown.editMeta {
-            it.itemName(Component.text("左下に拡張").color(AQUA))
+            it.itemName(Component.text("南西に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
                     Component.text(bar),
-                    Component.text("§7ワールドを左下(南西)方向に拡張します。"),
+                    Component.text("§7ワールドを南西方向に拡張します。"),
                     Component.text(bar),
-                    Component.text("§7█§b█"),
-                    Component.text("§7██"),
+                    Component.text("§7█§b█§7北"),
+                    Component.text("§7██⮙"),
                     Component.text("$index §7灰色: 拡張されるエリア"),
                     Component.text("$index §7水色: 現在のエリア"),
                     Component.text(bar),
@@ -127,14 +127,14 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         // 右下
         val methodRightDown = ItemStack(Material.CHEST)
         methodRightDown.editMeta {
-            it.itemName(Component.text("右下に拡張").color(AQUA))
+            it.itemName(Component.text("南東に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
                     Component.text(bar),
-                    Component.text("§7ワールドを右上(北東)方向に拡張します。"),
+                    Component.text("§7ワールドを南東方向に拡張します。"),
                     Component.text(bar),
-                    Component.text("§b█§7█"),
-                    Component.text("§7██"),
+                    Component.text("§b█§7█北"),
+                    Component.text("§7██⮙"),
                     Component.text("$index §7灰色: 拡張されるエリア"),
                     Component.text("$index §7水色: 現在のエリア"),
                     Component.text(bar),
@@ -145,14 +145,14 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         // 右上
         val methodRightUp = ItemStack(Material.CHEST)
         methodRightUp.editMeta {
-            it.itemName(Component.text("右下に拡張").color(AQUA))
+            it.itemName(Component.text("北東に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
                     Component.text(bar),
-                    Component.text("§7ワールドを右下(南東)方向に拡張します。"),
+                    Component.text("§7ワールドを北東方向に拡張します。"),
                     Component.text(bar),
-                    Component.text("§7██"),
-                    Component.text("§b█§7█"),
+                    Component.text("§7██北"),
+                    Component.text("§b█§7█⮙"),
                     Component.text("$index §7灰色: 拡張されるエリア"),
                     Component.text("$index §7水色: 現在のエリア"),
                     Component.text(bar),
