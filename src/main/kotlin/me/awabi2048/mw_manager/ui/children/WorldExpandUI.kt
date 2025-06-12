@@ -89,8 +89,8 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         }
 
         // 左上
-        val methodLeftUp = ItemStack(Material.CHEST)
-        methodLeftUp.editMeta {
+        val methodNorthWest = ItemStack(Material.CHEST)
+        methodNorthWest.editMeta {
             it.itemName(Component.text("北西に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
@@ -107,8 +107,8 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         }
 
         // 左下
-        val methodLeftDown = ItemStack(Material.CHEST)
-        methodLeftDown.editMeta {
+        val methodSouthWest = ItemStack(Material.CHEST)
+        methodSouthWest.editMeta {
             it.itemName(Component.text("南西に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
@@ -125,8 +125,8 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         }
 
         // 右下
-        val methodRightDown = ItemStack(Material.CHEST)
-        methodRightDown.editMeta {
+        val methodSouthEast = ItemStack(Material.CHEST)
+        methodSouthEast.editMeta {
             it.itemName(Component.text("南東に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
@@ -143,8 +143,8 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
         }
 
         // 右上
-        val methodRightUp = ItemStack(Material.CHEST)
-        methodRightUp.editMeta {
+        val methodNorthEast = ItemStack(Material.CHEST)
+        methodNorthEast.editMeta {
             it.itemName(Component.text("北東に拡張").color(AQUA))
             it.lore(
                 mutableListOf(
@@ -162,10 +162,10 @@ class WorldExpandUI(val player: Player, val world: MyWorld) : AbstractInteractiv
 
         // set
         ui.setItem(9, methodCenter)
-        ui.setItem(11, methodLeftUp)
-        ui.setItem(13, methodLeftDown)
-        ui.setItem(15, methodRightDown)
-        ui.setItem(17, methodRightUp)
+        ui.setItem(11, methodNorthWest)
+        ui.setItem(13, methodSouthWest)
+        ui.setItem(15, methodSouthEast)
+        ui.setItem(17, methodNorthEast)
 
         return ui
     }
